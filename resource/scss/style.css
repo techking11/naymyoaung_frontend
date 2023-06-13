@@ -1,0 +1,456 @@
+/**************************************************************
+****************** Google Font - Source Sans Pro
+***************************************************************/
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700;900&display=swap");
+/**************************************************************
+****************** Reset Codes
+****************************************************************/
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  font: 400 14px "Source Sans Pro", sans-serif;
+  color: #000000;
+  background: #ffffff;
+  line-height: 2;
+  font-display: swap;
+  overflow-x: hidden;
+}
+
+/**************************************************************
+****************** Global Codes
+****************************************************************/
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  font-weight: 400;
+}
+
+.button_transform, .main-hero button, .about button, .projects button, .contact button {
+  background: #FFB031;
+  border: none;
+  outline: none;
+  color: #222222;
+  padding: 13px 60px;
+  font-weight: 500;
+  letter-spacing: 2px;
+  box-shadow: 3px 3px 3px rgb(216, 213, 213);
+  font-size: 18px;
+  text-transform: uppercase;
+}
+.button_transform:hover, .main-hero button:hover, .about button:hover, .projects button:hover, .contact button:hover {
+  transform: translateY(-5%);
+  background: #FFB031;
+  color: #222222;
+}
+
+.after_line h1, .contact .header h1, .projects .header h1, .about_me .header h1 {
+  text-align: center;
+  color: #222222;
+  font-size: 32px;
+  letter-spacing: 2px;
+}
+.after_line h1::after, .contact .header h1::after, .projects .header h1::after, .about_me .header h1::after {
+  content: "";
+  position: absolute;
+  top: calc(3% + 7.5rem);
+  height: 5px;
+  width: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 5px;
+  background: #FFB031;
+}
+
+/**************************************************************
+****************** Header Codes - Navigation, Socail Icons
+****************************************************************/
+.header_navigation_hero_social {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+}
+.header_navigation_hero_social .top-navigation a, .header_navigation_hero_social .top-navigation #nav-header {
+  text-transform: uppercase;
+}
+.header_navigation_hero_social .top-navigation a {
+  font-size: 18px;
+}
+
+.top-navigation {
+  width: 100%;
+  box-shadow: 5px 0px 5px rgb(200, 196, 196);
+  z-index: 999;
+  position: fixed;
+}
+.top-navigation #nav-header {
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  color: #333333;
+}
+.top-navigation li {
+  padding: 0px 20px;
+  color: #333333;
+  font-weight: 600;
+  font-size: 16px;
+}
+.top-navigation a:hover, .top-navigation #nav-header:hover {
+  color: #FFB031;
+  transition: color 0.4s linear;
+}
+
+.social-icons {
+  position: absolute;
+  top: 50%;
+  left: 1px;
+  transform: translate(1px, -50%);
+  box-shadow: 3px 3px 3px rgb(239, 235, 235);
+}
+.social-icons li {
+  width: 60px;
+  height: 60px;
+  line-height: 50px;
+}
+.social-icons li a {
+  color: #333333;
+}
+.social-icons li i {
+  font-size: 24px;
+  cursor: pointer;
+}
+.social-icons li i:hover {
+  color: #FFB031;
+  transition: color 0.4s linear;
+}
+
+.main-hero {
+  width: 60%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 111;
+}
+.main-hero h1 {
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-weight: 900;
+  color: #222222;
+}
+.main-hero p {
+  font-size: 20px;
+  margin: 30px 0px;
+}
+
+/**************************************************************
+****************** About Me Parts Codes
+****************************************************************/
+.about_me {
+  position: relative;
+  padding: 100px 0px;
+  background: rgba(245, 245, 245, 0.646);
+}
+.about_me h2 {
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: #222222;
+  text-transform: capitalize;
+}
+.about_me .header p {
+  text-align: center;
+  font-size: 20px;
+  width: 65%;
+  margin: 0 auto;
+}
+.about_me .about p {
+  font-size: 18px;
+}
+.about_me .about p b {
+  color: #555;
+}
+.about_me .about p a {
+  color: #FFB031;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.about_me .my_skills button {
+  margin: 5px 3px;
+  background: #f2f2f2;
+  border: none;
+  outline: none;
+  color: #222;
+  font-weight: 500;
+  cursor: text;
+}
+.about_me .my_skills .skillSubTitle {
+  font-size: 16px;
+  margin: 15px 0px;
+  font-weight: 400;
+}
+
+/**************************************************************
+****************** Project Part Codes
+****************************************************************/
+.projects {
+  padding: 160px 0px;
+  position: relative;
+  box-shadow: 1px 0px 1px rgb(200, 196, 196);
+}
+.projects .header p {
+  text-align: center;
+  font-size: 20px;
+  width: 65%;
+  margin: 0 auto;
+}
+.projects .content {
+  padding-left: 20px;
+}
+.projects .content h2 {
+  font-size: 28px;
+  color: #222222;
+  text-transform: uppercase;
+}
+.projects .content p {
+  font-size: 18px;
+  margin: 20px 0px;
+}
+
+/**************************************************************
+****************** Contact Part Codes
+****************************************************************/
+.contact {
+  background: rgba(245, 245, 245, 0.646);
+  padding: 90px 0px;
+  position: relative;
+}
+.contact .header p {
+  text-align: center;
+  font-size: 20px;
+  width: 65%;
+  margin: 0 auto;
+}
+.contact .contact-form {
+  padding: 50px 80px;
+  border-radius: 10px;
+  color: #333333;
+  font-weight: 600;
+  font-weight: 200;
+  font-size: 16px;
+  text-align: center;
+}
+.contact .contact-form h2 {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+.contact .contact-form .contact-group {
+  margin: 20px 0px;
+}
+.contact .contact-form .contact-group a {
+  font-weight: 600;
+  font-size: 18px;
+  color: #333333;
+}
+
+/**************************************************************
+****************** Footer Part Codes
+****************************************************************/
+.footer {
+  background: #333333;
+  color: #eeeeee;
+}
+.footer p {
+  margin: 30px 0px;
+  font-size: 17px;
+}
+.footer .social {
+  margin: 30px 0px;
+}
+.footer .social li {
+  background: transparent;
+  border: none;
+  padding: 0px 12px;
+  cursor: pointer;
+}
+.footer .social li i {
+  color: #eeeeee;
+  font-size: 20px;
+}
+.footer .social li i:hover {
+  color: #FFB031;
+  transition: color 0.3s linear;
+}
+.footer .copyright {
+  border-top: 1px solid rgba(245, 245, 245, 0.646);
+}
+.footer .copyright a {
+  color: #eeeeee;
+  text-decoration: underline;
+}
+.footer .copyright p, .footer .copyright a {
+  letter-spacing: 1px;
+  font-size: 15px;
+}
+
+/**************************************************************
+****************** Separated Link Project Pages
+****************************************************************/
+.project-page {
+  padding: 80px 250px;
+}
+.project-page .content {
+  padding-left: 0px;
+}
+.project-page .my_skills button {
+  background: rgb(246, 244, 244);
+  box-shadow: 0px 0px 1px rgb(246, 244, 244);
+  font-weight: 500;
+}
+.project-page .see-live button {
+  border: 2px solid #FFB031;
+}
+.project-page .see-live #back {
+  background: transparent;
+  border: 2px solid #FFB031;
+  box-sizing: border-box;
+  margin-left: 20px;
+}
+
+/**************************************************************
+****************** All Devices' Screen Responsive
+****************************************************************/
+@media screen and (max-width: 992px) {
+  .projects {
+    padding: 215px 0px;
+  }
+  .projects .main-content {
+    text-align: center;
+    margin: 30px 0px;
+  }
+  .project-page {
+    padding: 80px 100px;
+  }
+  .project-page .main-content {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 768px) {
+  .header_navigation_hero_social .top-navigation img {
+    width: 60px;
+  }
+  .header_navigation_hero_social .top-navigation #nav-header {
+    font-size: 18px;
+  }
+  .header_navigation_hero_social .top-navigation li {
+    padding: 0px 8px;
+  }
+  .header_navigation_hero_social .top-navigation li a {
+    font-size: 16px;
+  }
+  .header_navigation_hero_social .social-icons li {
+    width: 50px;
+    height: 50px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .header_navigation_hero_social .social-icons li i {
+    font-size: 18px;
+  }
+  .header_navigation_hero_social .main-hero h1 {
+    font-size: 35px;
+  }
+  .header_navigation_hero_social .main-hero p {
+    font-size: 17px;
+    letter-spacing: 1px;
+  }
+  .header_navigation_hero_social .main-hero button {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+  .about_me {
+    padding: 100px 15px;
+  }
+  .about_me .header h1::after {
+    position: absolute;
+    top: calc(3% + 7rem);
+  }
+  .about_me .header p {
+    width: 100%;
+    font-size: 17px;
+  }
+  .about_me .about button {
+    font-size: 16px;
+    padding: 10px 30px;
+    margin-top: 20px;
+  }
+  .about_me .about p {
+    font-size: 17px;
+  }
+  .about_me .my_skills button {
+    margin: 5px 3px;
+    cursor: text;
+  }
+  .projects .header p {
+    font-size: 18px;
+    width: 100%;
+    margin-top: 20px;
+  }
+  .contact .header p {
+    font-size: 17px;
+    width: 100%;
+  }
+  .contact .contact-form {
+    padding: 30px;
+  }
+  .contact .contact-form button {
+    padding: 10px 30px;
+    font-size: 16px;
+  }
+  .contact .contact-form textarea {
+    height: 150px;
+  }
+  .project-page .content p {
+    font-size: 16px;
+  }
+  .project-page button {
+    font-size: 15px;
+  }
+  .project-page .see-live button {
+    padding: 10px 20px !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .header_navigation_hero_social .top-navigation img {
+    margin: 10px 10px;
+  }
+  .header_navigation_hero_social .top-navigation li {
+    border-top: 1px solid #eee;
+  }
+  .header_navigation_hero_social .top-navigation button {
+    border: none;
+    outline: none;
+  }
+  .header_navigation_hero_social .social-icons {
+    display: none;
+  }
+}/*# sourceMappingURL=style.css.map */

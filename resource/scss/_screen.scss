@@ -1,0 +1,170 @@
+// Large Size - Laptop Devices
+@media screen and (max-width: 992px) {
+    // Project Page
+    .projects {
+        padding: 215px 0px;
+        .main-content {
+            text-align: center;
+            margin: 30px 0px;
+        }
+    }
+    // Separate Projects Page
+    .project-page {
+        padding: 80px 100px;
+        .main-content {
+            text-align: left;
+        }
+    }
+}
+// Medium Side - Tablet Device
+@media screen and (max-width: 768px) {
+    // Header Part Codes
+    .header_navigation_hero_social {
+        // top navigation
+        .top-navigation {
+            img {
+                width: 60px;
+            }
+            #nav-header {
+                font-size: 18px;
+            }
+            li {
+                padding: 0px 8px;
+                a {
+                    font-size: 16px;
+                }
+            }
+        }
+        // Social Icons
+        .social-icons {
+            li {
+                width: 50px;
+                height: 50px;
+                line-height: 40px;
+                text-align: center;
+                i {
+                    font-size: 18px;
+                }
+            }
+        }
+        // Main Hero
+        .main-hero {
+            h1 {
+                font-size: 35px;
+            }
+            p {
+                font-size: 17px;
+                letter-spacing: 1px;
+            }
+            button {
+                font-size: 16px;
+                padding: 10px 30px;
+            }
+        }
+    }
+    // About Me Part Codes
+    .about_me {
+        padding: 100px 15px;
+        // Header
+        .header {
+            h1 {
+                &::after {
+                    position: absolute;
+                    top: calc(3% + 7rem);
+                }
+            }
+            p {
+                width: 100%;
+                font-size: 17px;
+            }
+        }
+        // about me data
+        .about {
+            button {
+                font-size: 16px;
+                padding: 10px 30px;
+                margin-top: 20px;
+            }
+            p {
+                font-size: 17px;
+            }
+        }
+        // my skills
+        .my_skills {
+            button {
+                margin: 5px 3px;
+                cursor: text;
+            }
+        }
+    }
+    // Project Part codes
+    .projects {
+        .header p {
+            font-size: 18px;
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+    // Contact Part Codes
+    .contact {
+        .header {
+            p{
+                font-size: 17px;
+                width: 100%;
+            }
+        }
+        // contact form
+        .contact-form {
+            padding: 30px;
+
+            button {
+                padding: 10px 30px;
+                font-size: 16px;
+            }
+            textarea {
+                height: 150px;
+            }
+        }
+    }
+    // Separate Project Codes
+    .project-page {
+        .content {
+            p {
+                font-size: 16px;
+            }
+        }
+        button {
+            font-size: 15px;
+        }
+        // See live
+        .see-live {
+            button {
+                padding: 10px 20px !important;
+            }
+        }
+    }
+}
+
+// Small Side - Mobile Devices
+@media screen and (max-width: 576px) {
+    // Header Part Codes
+    .header_navigation_hero_social {
+        // top navigation
+        .top-navigation {
+            img {
+                margin: 10px 10px;
+            }
+            li {
+                border-top: 1px solid #eee;
+            }
+            button {
+                border: none;
+                outline: none;
+            }
+        }
+        // Social Icons
+        .social-icons {
+            display: none;
+        }
+    }
+}

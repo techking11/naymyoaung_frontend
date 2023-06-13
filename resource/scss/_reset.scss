@@ -1,0 +1,18 @@
+@import "./variables";
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    scroll-behavior: smooth;
+    text-rendering: optimizeLegibility;
+}
+body {
+    font: 400 14px "Source Sans Pro", sans-serif;
+    color: $black_color;
+    background:  $white_color;
+    line-height: 2;
+    font-display: swap;
+    overflow-x: hidden;
+}

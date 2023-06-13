@@ -1,0 +1,53 @@
+// global Codes
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    text-transform: uppercase;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+p {
+    font-weight: 400;
+}
+// For Button to extend
+.button_transform {
+    background: $btn_color;
+    border: none;
+    outline: none;
+    color: $text_black;
+    padding: 13px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    box-shadow: 3px 3px 3px rgb(216, 213, 213);
+    font-size: 18px;
+    text-transform: uppercase;
+
+    &:hover {
+        transform: translateY(-5%);
+        background: $btn_color;
+        color: $text_black;
+    }
+}
+// Header Line to extend
+.after_line {
+    h1 {
+        text-align: center;
+        color: $text_black;
+        font-size: 32px;
+        letter-spacing: 2px;
+        &::after {
+            content: '';
+            position: absolute;
+            top: calc(3% + 7.5rem);
+            height: 5px;
+            width: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            border-radius: 5px;
+            background: $btn_color;
+        }
+    }
+}
